@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="topnav">
+    <a href="/">Home</a>
+    <a class="active" href="/adminpass">Add</a>
+    <a href="/upload">Upload</a>
+  </div>
+  <br/>
+  <p>
+    <form action="/add" method="post">
+      <input name="Make" type="text" placeholder="Make"><br/><br/>
+      <input name="Model" type="text" placeholder="Model"><br/><br/>
+      <input name="Price" type="text" placeholder="Price"><br/><br/>   
+      <input name="image" type="text" placeholder="Image"><br/><br/>
+      <input name="about" type="text" placeholder="Description"><br/>
+      <br/><br/>
+      <input type="submit" class="button button1" value="Add A Phone">
+    </form>
+  </p>
+</body>
+</html>

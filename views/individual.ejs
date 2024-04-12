@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheet.css">
+
+  
+  
+  
+</head>
+
+  <body>
+
+    <div class="topnav">
+  
+      <a href="/">Home</a>
+      <a href="/add">Add</a>
+      <a href="/upload">Upload</a>
+      
+    </div>
+    
+<% result.forEach(function(item) { %> 
+     <p> <br/><br/>
+      <img src="/<%= item.image%>" class="thumbnail"> <br/>
+      <%= item.Make %> <br/>
+      <%= item.Model %> <br/>
+      €<%= item.Price %> <br/>
+      <%= item.id %> <br/>
+      <%= item.about %> </p>
+      <% }); %>
+
+
+      
+  </body>
+</html>
+

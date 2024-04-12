@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+ <div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="/adminpass">Add</a>
+    <a href="/upload">Upload</a>
+  </div>
+
+
+  <h6> 
+    <img src="PhoneApp.png"  width="300" height="300">
+  </a> </h6>
+
+<% result.forEach(function(item) { %> 
+
+  <div class="row">
+    <div class="column">
+      <br/><br/>
+
+   <h1> <img src="<%= item.image%>" class="thumbnail"></h1>
+    <p> <%= item.Make %></a> <br/>
+     <%= item.Model %> <br/>
+    €<%= item.Price %> <br/>
+    <p><a href="/Make/<%= item.Make %>" class="button button1">See More By This Provider</a> <br/>
+    <p><a href="/individual/<%= item.id %>" class="button button1">See This Phone</a> <br/></p>
+   <h4></h4>
+</div>
+  
+    <% }); %>
+  <br/><br/>
+
+
+   
+</body>
+</html> 

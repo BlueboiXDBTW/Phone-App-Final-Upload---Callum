@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheet.css">
+
+
+  </head>
+
+ <body>
+  <div class="topnav">
+  
+    <a class="active" href="/">Home</a>
+    <a href="/add">Add</a>
+    <a href="/upload">Upload</a>
+  </div>
+
+    
+
+    <h1><%= result[0].Make %>'s Phone's</h1>
+
+<% result.forEach(function(item) { %> 
+      
+<div class="row">
+  <div class="column">
+    <br/><br/>
+
+ <h1> <img src="/<%= item.image%>" class="thumbnail"> </h1>
+  <p> <%= item.Make %></a> </p> 
+  <p> <%= item.Model %> </p> 
+ <p> €<%= item.Price %> </p> 
+  
+ <h4></h4>
+</div>
+
+  <% }); %>
+<br/><br/>
+  
+</body>
+
+</html>
+

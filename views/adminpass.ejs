@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+ <div class="topnav">
+  
+    <a href="/">Home</a>
+    <a class="active" href="/adminpass">Add</a>
+    <a href="/upload">Upload</a>
+  </div>
+  <br/><br/>
+
+  
+<label for="userPassword">Password: </label>
+<input id="userPassword" type="password" required />
+<button onclick="checkPassword()">Submit</button>
+<script>
+  function checkPassword() {
+    const password = document.getElementById("userPassword").value;
+    if (password === "AdminLogin123") {
+        window.location.href = "/add";
+    } else {
+      alert("Password is incorrect, please try again later. If this issue still persists, contact your supervisor.");
+    }
+  }
+</script>
+
+
+
+   
+</body>
+</html> 
+
+
+
+
+    
